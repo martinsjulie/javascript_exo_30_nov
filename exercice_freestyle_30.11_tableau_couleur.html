@@ -22,11 +22,32 @@
       </tr>
     </table>
   <script language="javascript">
+  var colours=["FF0000","#00FF00","#0000FF"];
+  for (var i in colours){
+    window.alert(i)
+  }
+  }
+/*
+  colours.red ="#FF0000";
+  window.alert(colours.red="#FF0000");
+  colours["green"]="#00FF00";
+  window.alert(colours["green"]="#00FF00");
+
+  colours.push("0000FF");
+  for (var i=0; i<colours.length; i++){
+    window.alert(colours[i]);
+
+
   var colours=["FF0000","#00FF00"];
   colours.push("0000FF");
+  var i=0;
+  while (i<colours.length) {
+    window.alert(colours[i]);
+    i++;
+
   window.alert(colours[1]);
   window.alert(colours,lenght);
-  /*
+
   var name = window.prompt("What is your name?");
   document.getElementById("name").innerHTML = name;
   if (name == "julie"){

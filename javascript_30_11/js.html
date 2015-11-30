@@ -24,7 +24,7 @@
         <th> "Le monde a besoin de connaitre ta couleur préférée"</th><td id="color"></td>
       </tr>
 </table>
-
+<button onclick="javascript:ask();"> Ask me</button>
 <script language="javascript">
 
 var name = window.prompt("Quel est ton nom ?");
@@ -41,8 +41,7 @@ else
 var color = window.prompt("Le monde a besoin de connaitre ta couleur préférée");
 function insertText(domid,text,color){
   document.getElementById(domid).innerHTML = text;
-
-
+  document.getElementById(domid).style = "color" + color;
 }
   switch (color) {
     case "red":
