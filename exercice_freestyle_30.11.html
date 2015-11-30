@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>Exercice 19 nov </title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td id="name"></td>
+      </tr>
+      <tr>
+        <th>Quest</th>
+        <td id="quest"></td>
+      </tr>
+      <tr>
+        <th>Color</th>
+        <td id="color"></td>
+      </tr>
+    </table>
+  <script language="javascript">
+
+  var name = window.prompt("What is your name?");
+  document.getElementById("name").innerHTML = name;
+  if (name == "julie"){
+    document.getElementById("name").innerHTML = "<span style=\"color:green;\">" + name + "</span>";
+  }else{
+    document.getElementById("name").innerHTML = "<span style=\"color:red;\">" + name + "</span>";
+  }
+
+  var quest = window.prompt("What is your quest?");
+  document.getElementById("quest").innerHTML = quest;
+  if (quest == "anneau"){
+    document.getElementById("quest").innerHTML = "<span style=\"color:gold;\">" + quest + "</span>";
+  }else if (quest == "voldemort") {
+    document.getElementById("quest").innerHTML = "<span style=\"color:black;font-size:20px;\">" + quest + "</span>";
+  }else if (quest =="barbapapa") {
+    document.getElementById("quest").innerHTML = "<span style=\"color:pink;\">" + quest + "</span>";
+  }
+
+  else{
+    document.getElementById("quest").innerHTML = "<span style=\"color:silver;\">" + quest + "</span>";
+  }
+    var color = window.prompt("Write someting in color!");
+  document.getElementById("color").innerHTML ="<span style=\"color:brown;\">" + color + "</span>";
+
+
+  </script>
+
+  </body>
+</html>
