@@ -39,31 +39,36 @@ else
 }
 
 var color = window.prompt("Le monde a besoin de connaitre ta couleur préférée");
+function insertText(domid,text,color){
+  document.getElementById(domid).innerHTML = text;
+
+
+}
   switch (color) {
     case "red":
-    document.getElementById("color").innerHTML = "<span style=\"color: red;\">" + color +"</span>";
+    insertText("color","<span style=\"color: red;\">" + color +"</span>");
       break;
     case "blue":
-    document.getElementById("color").innerHTML = "<span style=\"color: blue;\">" + color +"</span>";
+    insertText("color","<span style=\"color: blue;\">" + color +"</span>");
       break;
     case "green":
-    document.getElementById("color").innerHTML = "<span style=\"color: green;\">" + color +"</span>";
+    insertText("color","<span style=\"color: green;\">" + color +"</span>");
       break;
     case "yellow":
-    document.getElementById("color").innerHTML = "<span style=\"color: yellow;\">" + color +"</span>";
+    insertText("color","<span style=\"color: yellow;\">" + color +"</span>");
       break;
     case "pink":
-      document.getElementById("color").innerHTML = "<span  style=\"color:pink;\">" + color + "</span>";
+      insertText("color", "<span style=\"color:pink;\">" + color + "</span>");
       break;
     case "brown":
-      document.getElementById("color").innerHTML = "<span style=\"color:brown\">" + color + "</span>";
+      insertText("color","<span style=\"color:brown\">" + color + "</span>");
       break;
     case "orange":
-      document.getElementById("color").innerHTML = "<span style=\"color:orange\">" + color + "</span>";
+      insertText("color","<span style=\"color:orange\">" + color + "</span>");
       break;
 
     default:
-    document.getElementById("color").innerHTML = "<span style=\"color:grey\">" + color + "</span>";
+    insertText("color","<span style=\"color:grey\">" + color + "</span>");
 
   }
 </script>
